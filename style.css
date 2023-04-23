@@ -5,14 +5,14 @@
   --clr-accent: hsl(5, 85%, 63%);
   --clr-neutral-light-200: hsl(36, 100%, 99%);
   --clr-neutral-light-100: hsl(233, 8%, 79%);
-  --clr-neutral-dark-200: hsl(236, 13%, 42%);
-  --clr-neutral-dark-100: hsl(240, 100%, 5%);
+  --clr-neutral-dark-200: hsl(240, 100%, 5%);
+  --clr-neutral-dark-100: hsl(236, 13%, 42%);
 
   /* Typography */
+  --fs-1: 2rem;
+  --fs-2: 1.4rem;
+  --fs-3: 1.1rem;
   --fs-neutral: 0.9375rem;
-  --fs-1: calc(var(fs-neutral) * 2);
-  --fs-2: calc(var(fs-1) - 0.8rem);
-  --fs-3: calc(var(fs-2) - 0.3rem);
 
   --font-family: "Inter", sans-serif;
 
@@ -99,3 +99,28 @@ select {
   }
 }
 /* --/ RESETS -- */
+
+/* -- DEFAULT STYLES -- */
+body {
+  font-family: var(--font-family);
+  font-size: var(--fs-neutral);
+  font-weight: var(--fw-regular);
+  color: var(--clr-neutral-dark-100);
+
+  background-color: white;
+
+  padding: 4%;
+}
+
+h1 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-extra-bold);
+  color: var(--clr-neutral-dark-200);
+}
+h2 {
+  font-size: var(--fs-2);
+}
+h3 {
+  font-size: var(--fs-3);
+}
+/* -- DEFAULT STYLES -- */
